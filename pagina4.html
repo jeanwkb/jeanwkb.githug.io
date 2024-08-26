@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos Pessoais</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .nav {
+            width: 100%;
+            background-color: #333;
+            padding: 14px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            color: white;
+            background-color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        li a:hover {
+            background-color: white;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 60px; /* Espaço para a navbar fixa */
+        }
+
+        .fundo {
+            display: block;
+            margin: 20px auto;
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3, p {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        fieldset {
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        footer img:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+
+            .fundo {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav {
+                padding: 10px;
+            }
+
+            li a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .fundo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index">Sobre</a></li>
+            <li><a href="pagina2.html">Portfólio</a></li>
+            <li><a href="pagina3.html">Formação</a></li>
+            <li><a href="pagina4.html">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Contatos Pessoais</h2>
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <p>Jean Willian Kraft Bersi</p>
+            <p>Email: <a href="mailto:jeanwillian0508@gmail.com">jeanwillian0508@gmail.com</a></p>
+        </fieldset>
+
+        <h1>Estou disponível para projetos ou estágio na área.</h1>
+        
+        <img src="desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg" alt="Fundo" class="fundo">
+
+        <h3>Programação por amor, não por opção</h3>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome:" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email:" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem:" rows="4" maxlength="500" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </header>
+
+    <footer>
+        <!-- Widget de WhatsApp -->
+        <a href="https://wa.me/5542988129767" class="whatsapp" target="_blank" aria-label="Fale conosco no WhatsApp">
+            <img src="kisspng-whatsapp-logo-computer-icons-messenger-5abe20d1e68177.1133491015224096819442.jpg" alt="WhatsApp">
+        </a>
+
+        <!-- Widget do Instagram -->
+        <a href="https://www.instagram.com/kraft_willian/" class="instagram" target="_blank" aria-label="Fale conosco no Instagram">
+            <img src="f357fe14-463e-4d77-ac2a-4ac20083a4c4_logo-ig-logo-instagram-ini-ada-varias-dan-transparan-33.webp" alt="Instagram">
+        </a>
+
+        <!-- Widget do LinkedIn -->
+        <a href="https://www.linkedin.com/in/jean-kraft-23a104182/" class="linkedin" target="_blank" aria-label="Fale conosco no LinkedIn">
+            <img src="R.png" alt="LinkedIn">
+        </a>
+
+        <!-- Widget do GitHub -->
+        <a href="https://github.com/jeanwkb" class="github" target="_blank" aria-label="Fale conosco no GitHub">
+            <img src="github_PNG80.png" alt="GitHub">
+        </a>
+    </footer>
+</body>
+
+</html>

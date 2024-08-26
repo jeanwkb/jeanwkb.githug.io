@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7c9dda;
+        }
+
+        .nav {
+            width: 100%;
+            background-color: black;
+            padding: 14px 16px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        li a {
+            color: white;
+            background-color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        li a:hover {
+            transition: background-color 0.5s, color 0.5s;
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(33.333% - 40px);
+            /* 3 items per row with gaps */
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .portfolio-item .content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .portfolio-item .content h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .portfolio-item .content p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                flex: 1 1 calc(50% - 40px);
+                /* 2 items per row */
+            }
+
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav li {
+                margin: 5px 0;
+            }
+
+            .nav li a {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-item {
+                flex: 1 1 100%;
+                /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="pagina2.html">Portfólio</a></li>
+            <li><a href="pagina3.html">Formação</a></li>
+            <li><a href="pagina4.html">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <!--bem aqui colocamos os link de acesso no href e o src colocamos a imagem desejadas-->
+    <div class="container">
+        <h1>Portfólio</h1>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <a href="https://jeanwkb.github.io/tabela/" class="tabela" target="_blank">
+                    <img src="banco-de-dados-como-servico-o-que-e-e-quais-os-beneficios-p10drsmzu8okc1cww9o3ypie6ymj3uxj7xqj7reqq0.jpg"
+                        alt="Projeto 1"></a>
+
+                <div class="content">
+                    <h3>Tabela</h3>
+                    <p>Em manutemção</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://jeanwkb.github.io/calculadora/" target="_blank">
+                    <img src="istockphoto-603187710-612x612.jpg" alt="calculadora"></a>
+                <div class="content">
+                    <h3>Calculadora</h3>
+                    <p>Funcional</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://jeanwkb.github.io/formulario/" class="formulario" target="_blank">
+                    <img src="OIP (2).jpeg" alt="formulario"></a>
+                <div class="content">
+                    <h3>Formulario 2</h3>
+                    <p>Funcional</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <h3>A busca pelo conhecimento é eterná porem nescessaria.</h3>
+</body>
+</html>

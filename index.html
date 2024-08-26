@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Profissional</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            width: 100%;
+            background-color: black;
+            padding: 14px 16px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        li a {
+            color: white;
+            background-color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        li a:hover {
+            transition: background-color 0.5s, color 0.5s;
+            background-color: #ffffff;
+            color: black;
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 40%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        .dev {
+            text-align: center;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            ul {
+                align-items: center;
+                flex-direction: column;
+            }
+
+            li {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav {
+                padding: 10px;
+            }
+
+            li a {
+                padding: 10px;
+            }
+
+            footer {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="pagina2.html">Portfólio</a></li>
+            <li><a href="pagina3.html">Formação</a></li>
+            <li><a href="pagina4.html">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <h2>Dados Pessoais</h2>
+
+    <p>Me chamo Jean Kraft, tenho 24 anos nascido no ano de 2000, atualmente moro no Paraná atuando na área profissional
+        de logística. Hoje estou cursando "ANÁLISE E DESENVOLVIMENTO DE SISTEMAS".</p>
+    <p>Meus hobbies são voltados a jogos digitais, academia e agora estou incluindo os estudos como uma prioridade
+        número um. Às vezes faço caminhada.</p>
+    <p>Minha personalidade, segundo últimos testes realizados, me enquadro no segmento INTP, que é analítico, objetivo e
+        racional em seu comportamento. Eles passam muito tempo em seus pensamentos, pesquisando tópicos, estabelecendo
+        conexões e tentando descobrir como as coisas funcionam. Eles gostam de pesquisar novas teorias e ideias,
+        portanto, são frequentemente responsáveis por grandes avanços em sua área de atuação.</p>
+    <p>Desenvolvo pequenos projetos web utilizando apenas HTML, CSS e JavaScript. Hoje, minha última e grande decisão
+        foi a faculdade; escolhi esse curso porque sempre gostei do mundo de jogos e o que quero é trabalhar no
+        desenvolvimento de jogos. Essa é minha paixão, acredito que quando trabalhamos com amor, é aí que alcançamos a
+        excelência.</p>
+
+    <div class="dev">Ser dev não é uma profissão, é um estilo de vida!</div>
+    <img src="development-4536630_1280.png" alt="Desenvolvimento">
+
+    <h3>Veni, Vidi...</h3>
+    <footer>Para fins educacionais</footer>
+</body>
+</html>
